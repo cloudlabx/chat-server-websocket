@@ -58,7 +58,7 @@
                         </descriptorRefs>
                         <archive>
                             <manifest>
-                                <mainClass>ch.desm.middleware.app.module.tyrusserver.Start</mainClass>
+                                <mainClass>ch.cloudlabx.chat_server_websocket.ServerStart</mainClass>
                             </manifest>
                         </archive>
                     </configuration>
