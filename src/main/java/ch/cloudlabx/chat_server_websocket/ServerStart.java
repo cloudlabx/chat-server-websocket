@@ -7,12 +7,15 @@ import java.io.InputStreamReader;
 public class ServerStart {
 
     public static void main(String[] args){
-       runServer();
+        String hostIp = args[0]; //localhost
+        int port = new Integer(args[1]); //port
+        String rootContext = "/room";
+        runServer(hostIp, port, rootContext);
     }
 
 
-    public static void runServer() {
-        Server server = new Server("localhost", 8070, "/room", null, ServerEndpoint.class);
+    public static void runServer(String hostIp, int port, String rootContext) {
+        Server server = new Server(hostIp, port, rootContext, null, ServerEndpoint.class);
 
         try {
             server.start();
