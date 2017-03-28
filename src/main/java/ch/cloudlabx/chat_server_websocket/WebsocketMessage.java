@@ -1,4 +1,4 @@
-package ch.desm.middleware.app.module.tyrusserver.reference;
+package ch.cloudlabx.chat_server_websocket;
 
 /**
  * Created by heisenberg on 28.03.17.

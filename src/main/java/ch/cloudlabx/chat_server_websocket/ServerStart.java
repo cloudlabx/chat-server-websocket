@@ -1,11 +1,10 @@
-package ch.desm.middleware.app.module.tyrusserver;
+package ch.cloudlabx.chat_server_websocket;
 
-import ch.desm.middleware.app.module.tyrusserver.reference.ServerEndpoint;
 import org.glassfish.tyrus.server.Server;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Start {
+public class ServerStart {
 
     public static void main(String[] args){
        runServer();

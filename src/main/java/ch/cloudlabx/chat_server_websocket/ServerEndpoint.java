@@ -1,9 +1,6 @@
-package ch.desm.middleware.app.module.tyrusserver.reference;
+package ch.cloudlabx.chat_server_websocket;
 
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
@@ -36,7 +33,6 @@ public class ServerEndpoint {
 
         Map<Session, String> sessions = sessionStore.getSessions();
         Iterator<Map.Entry<Session, String>> iter = sessions.entrySet().iterator();
-        WebsocketMessage receivedWsMsg = new Gson().fromJson(message,WebsocketMessage.class);
 
         while(iter.hasNext()){
             Map.Entry<Session, String> entry = iter.next();

@@ -1,4 +1,4 @@
-package ch.desm.middleware.app.module.tyrusserver.reference;
+package ch.cloudlabx.chat_server_websocket;
 
 import javax.websocket.Session;
 import java.util.*;
