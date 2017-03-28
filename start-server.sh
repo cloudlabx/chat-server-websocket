@@ -1,7 +1,12 @@
+#!/bin/bash
+
+# Source the Cloudcenter user env file to onboard C3 specifc vars
+source /usr/local/cliqr/etc/userenv
+
 export INSTALL_ROOT_FOLDER=/tmp
 export JAR_NAME="chat-server-websocket-0.1-jar-with-dependencies.jar"
 export JAR_URL="https://github.com/cloudlabx/chat-server-websocket/raw/master/target"
-export HOST_IP="10.24.0.103"
+export HOST_IP=$1
 export HOST_PORT="8025"
 
 #tools 
