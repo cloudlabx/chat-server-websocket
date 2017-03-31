@@ -7,7 +7,7 @@
 export INSTALL_ROOT_FOLDER=~
 export JAR_NAME="chat-server-websocket-0.1-jar-with-dependencies.jar"
 export JAR_URL="https://github.com/cloudlabx/chat-server-websocket/raw/master/target"
-export HOST_IP=CliqrTier_chatserver_1_PUBLIC_IP
+export HOST_IP=$CliqrTier_chatserver_1_PUBLIC_IP
 export HOST_PORT="8025"
 
 #tools 
