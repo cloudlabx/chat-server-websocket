@@ -19,7 +19,7 @@ sudo yum -y install wget
 #installation
 cd $INSTALL_ROOT_FOLDER
 echo "download jar file" >> /var/log/install-chat-server.log
-sudo curl -SLO $JAR_URL"/"$JAR_NAME >> /var/log/install-chat-server.log
+sudo curl -SLO $JAR_URL"/"$JAR_NAME
 echo "start server" >> /var/log/install-chat-server.log
 sudo nohup java -jar $JAR_NAME $HOST_IP $HOST_PORT &
 
