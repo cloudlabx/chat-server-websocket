@@ -7,6 +7,7 @@
 export INSTALL_ROOT_FOLDER=~
 export JAR_NAME="chat-server-websocket-0.1-jar-with-dependencies.jar"
 export JAR_URL="https://github.com/cloudlabx/chat-server-websocket/raw/master/target"
+export APP_TIER_NAME=$cliqrAppTierName
 export HOST_IP=$CliqrTier_chatserver_1_PUBLIC_IP
 export HOST_PORT="8025"
 
@@ -21,7 +22,7 @@ cd $INSTALL_ROOT_FOLDER
 echo "download jar file" >> $INSTALL_ROOT_FOLDER/install-chat-server.log
 sudo curl -SLO $JAR_URL"/"$JAR_NAME
 echo "start server" >> $INSTALL_ROOT_FOLDER/install-chat-server.log
-sudo nohup java -jar $JAR_NAME $HOST_IP $HOST_PORT &
+sudo java -jar $JAR_NAME $HOST_IP $HOST_PORT &>> $INSTALL_ROOT_FOLDER/install-chat-server.log &
 
 #custom java installation
 # export ORACLE_URL="http://download.oracle.com/otn-pub/java/jdk/8u60-b27"
