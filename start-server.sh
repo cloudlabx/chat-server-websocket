@@ -11,16 +11,16 @@ export HOST_IP=$CliqrTier_chatserver_1_PUBLIC_IP
 export HOST_PORT="8025"
 
 #tools 
-echo "Install Java Runtime" >> /var/log/install-chat-server.log
+echo "Install Java Runtime" >> $INSTALL_ROOT_FOLDER/install-chat-server.log
 sudo yum -y install jre
-echo "Install WGET" >> /var/log/install-chat-server.log
+echo "Install WGET" >> $INSTALL_ROOT_FOLDER/install-chat-server.log
 sudo yum -y install wget
 
 #installation
 cd $INSTALL_ROOT_FOLDER
-echo "download jar file" >> /var/log/install-chat-server.log
+echo "download jar file" >> $INSTALL_ROOT_FOLDER/install-chat-server.log
 sudo curl -SLO $JAR_URL"/"$JAR_NAME
-echo "start server" >> /var/log/install-chat-server.log
+echo "start server" >> $INSTALL_ROOT_FOLDER/install-chat-server.log
 sudo nohup java -jar $JAR_NAME $HOST_IP $HOST_PORT &
 
 #custom java installation
